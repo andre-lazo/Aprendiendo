@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #032618;/*fondo*/
+}
+
+.tittle-course{
+  text-align: left;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+/* Style the header */
+header {
+  background-color: #032618;/*fondo*/
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #5F3333;/*fondo*/
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+/*Style the a inside the li in menu*/
+nav li a{
+	color: black;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+	transition: all 0.4s linear;
+}
+
+/*Padding para el ul de los videos*/
+.ul-videos{
+	color: black;
+	
+	padding: 5px 15px;
+	display: block;
+	transition: all 0.4s linear;
+	font-size: 20px;
+}
+
+nav li a:hover{
+	background-color: rgba(255,0,0,0.5);/*colo al pasar el mause sobre el menú*/
+	height: 100%;
+}
+
+.ul-videos:hover{
+	background-color: #46574C;/*colo al pasar el mause sobre el menú*/
+	height: 100%;
+}
+
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #C8C8C8;/*fondo*/
+  padding: 0 10px 10px 10px;
+}
+
+/* Style the list inside the menu */
+.ul-cursos ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+/*Style the a inside the li in menu*/
+.ul-cursos li a{
+	color: black;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+	transition: all 0.4s linear;
+}
+
+.ul-cursos li a:hover{
+	background-color: #3C5946;/*colo al pasar el mause sobre el menú*/
+	height: 100%;
+}
+
+/*Style Courses*/
+.pic-description{
+	display: flex;
+	width: 100%;
+	background-color: #ADADAD;
+	border: 4px solid black;	
+	margin-bottom: 5px;
+}
+
+.picture{
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  margin: auto 1%;
+}
+
+.desciption{
+	width: 100%;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+	text-align: justify;
+	font-size: 20px;
+}
+
+/*línea separadora*/
+hr{
+ border-color: black;
+}
+
+/* Style the footer */
+footer {
+  background-color: #173120;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-family: monospace;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
